@@ -129,7 +129,9 @@ gulp.task('lint:js', function () {
     return gulp.src([
         'gulpfile.js',
         dirs.src + '/js/*.js',
-        dirs.test + '/*.js'
+        dirs.test + '/*.js',
+        '!' + dirs.src + '/js/vendor/lungo.js',
+        '!' + dirs.src + '/js/vendor/quo.js'
     ]).pipe(plugins.jscs())
       .pipe(plugins.jshint())
       .pipe(plugins.jshint.reporter('jshint-stylish'))

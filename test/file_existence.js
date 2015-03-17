@@ -26,6 +26,9 @@ var expectedFilesInDistDir = [
             // should be included at the end
         'css/main.css',
         'css/normalize.css',
+        'css/lungo.css',
+        'css/lungo.icon.css',
+        'css/lungo.theme.css',
 
     'doc/',
         'doc/TOC.md',
@@ -51,6 +54,9 @@ var expectedFilesInDistDir = [
         'js/vendor/',
             'js/vendor/jquery-' + pkg.devDependencies.jquery + '.min.js',
             'js/vendor/modernizr-2.8.3.min.js',
+            'js/vendor/jquery.min.map',
+            'js/vendor/lungo.js',
+            'js/vendor/component.json',
 
     'robots.txt',
     'tile-wide.png',
